@@ -2,17 +2,20 @@ body{
     background-color: #1f1f1f;
     color: #cccccc;
     margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
 header{
     background-color: #3279d4;
     padding: 30px;
+    margin-bottom: 20px;
 }
 
 footer{
     background-color: #eb590c;
     color: #181818;
     padding: 80px 30px;
+    margin-top: 20px;
 }
 
 .contenedorInfo{
@@ -41,6 +44,13 @@ footer{
     vertical-align: middle;
     text-align: right;
     margin-right: 20px;
+}
+
+.contenedorTexto h3{
+    color: yellow;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "Shadows Into Light", cursive;
 }
 
 .alinearIzq{
