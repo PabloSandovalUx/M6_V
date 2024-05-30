@@ -1,0 +1,57 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:red;
+}
+
+p{
+    color: blue;
+}
+
+.textoDestacado{
+    color: darkorange;
+}
+
+.textoDestacado2{
+    color: purple;
+    text-align: right;
+}
+
+.fondoOscuro{
+    background-color: darkgreen;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.textoResaltado{
+    color: pink;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.imgPrincipal{
+    width: 300px;
+    display: block;
+    margin: 10px 0;
+    margin-left: 200px;
+}
+
+.cuadroColor{
+    margin: 10px 0;
+    width: 80%;
+    margin-left: 10%;
+    background-color: chartreuse;
+    display: inline-block;
+}
+
+.imgCuadro{
+    width: 100%;
+}

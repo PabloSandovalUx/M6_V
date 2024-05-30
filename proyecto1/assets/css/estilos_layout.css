@@ -1,0 +1,50 @@
+body{
+    background-color: #1f1f1f;
+    color: #cccccc;
+    margin: 0;
+}
+
+header{
+    background-color: #3279d4;
+    padding: 30px;
+}
+
+footer{
+    background-color: #eb590c;
+    color: #181818;
+    padding: 80px 30px;
+}
+
+.contenedorInfo{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.cadaInfo{
+    margin-bottom: 40px;
+}
+
+.contenedorImg{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contenedorImg img{
+    width: 100%;
+}
+
+.contenedorTexto{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.alinearIzq{
+    margin: 0;
+    margin-left: 20px;
+    text-align: left;
+}
