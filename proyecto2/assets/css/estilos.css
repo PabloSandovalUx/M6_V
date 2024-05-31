@@ -1,0 +1,58 @@
+body{
+    background-color: #1f1f1f;
+    color: white;
+    margin: 0;
+}
+
+header{
+    background-color: #eb5a0b;
+    padding: 30px;
+}
+
+footer{
+    background-color: #327ad4;
+    padding: 50px;
+}
+
+main{
+    margin: 40px;
+}
+
+.contenedorCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.card{
+    flex: 1;
+    background-color: #cecece;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #1f1f1f;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+.anchoDoble{
+    flex: 2;
+}
+
+.contenedorFoto{
+    width: 100%;
+}
+
+.contenedorFoto img{
+    width: 100%;
+}
+
+.contenedorTexto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
