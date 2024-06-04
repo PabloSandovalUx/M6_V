@@ -1,29 +1,33 @@
-body{
+body {
     background-color: #1f1f1f;
     color: white;
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-header{
+header {
     background-color: #eb5a0b;
     padding: 30px;
     transition: background .3s;
 }
 
-header:hover{
+header:hover {
     background-color: #ad440b;
 }
 
-footer{
-    background-color: #327ad4;
-    padding: 50px;
-}
-
-main{
+main {
     margin: 40px;
 }
 
-.contenedorCards{
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.contenedorCards {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -33,7 +37,7 @@ main{
     margin-bottom: 40px;
 }
 
-.card{
+.card {
     flex: 1;
     background-color: #cecece;
     border-radius: 10px;
@@ -45,24 +49,25 @@ main{
     flex-direction: column;
 }
 
-.card:hover{
+.card:hover {
     background-color: #767676;
     color: white;
-    box-shadow: 0 0 20px rgba(255,0,0,1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
 }
 
-.card h2{
+.card h2 {
     transition: color .6s;
 }
-.card:hover h2{
+
+.card:hover h2 {
     color: #eb5a0b;
 }
 
-.anchoDoble{
+.anchoDoble {
     flex: 2;
 }
 
-.contenedorFoto{
+.contenedorFoto {
     width: 100%;
     height: 190px;
     overflow: hidden;
@@ -71,36 +76,37 @@ main{
     align-items: center;
 }
 
-.contenedorFoto img{
+.contenedorFoto img {
     width: 100%;
     transition: all .6s;
 }
-.card:hover .contenedorFoto img{
+
+.card:hover .contenedorFoto img {
     width: 200%;
 }
 
-.fondoImg1{
+.fondoImg1 {
     background: url("../img/auto.webp");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.fondoImg2{
+.fondoImg2 {
     background: url("../img/vertical.jpeg");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.fondoImg3{
+.fondoImg3 {
     background: url("../img/cuadrado.avif");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.contenedorTexto{
+.contenedorTexto {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -109,15 +115,15 @@ main{
     gap: 10px;
 }
 
-.contenedorCardVertical{
+.contenedorCardVertical {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
 
-.cardVertical{
+.cardVertical {
     flex: 1;
     height: 300px;
     background-color: lightcoral;
@@ -126,56 +132,147 @@ main{
     align-items: center;
 }
 
+footer {
+    background-color: #333333;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorFooter1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.columnaFooter {
+    width: 100%;
+    padding: 10px;
+}
+
+.lineaVertical{
+    border-left: 1px solid #cecece;
+}
+
+.columnaFooter h4 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.columnaFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+
+.columnaFooter li {
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-size: 14px;
+    transition: background, padding .4s;
+}
+
+.contenedorFooter2{
+    margin-top: 80px;
+    padding: 10px;
+}
+
+footer li:hover{
+    padding-left: 10px;
+    border-left: 5px solid #006DFF;
+}
+
+.iconosFooter{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.iconosFooter a{
+    font-size: 24px;
+    color: #888888;
+}
+
+.iconosFooter a:hover{
+    color: #006DFF;
+}
+
+.iconosFooter img{
+    transition: all .4s;
+}
+
+.iconosFooter img:hover{
+    filter: brightness(2);
+}
+
+.iconosFooter svg{
+    width: 24px;
+    height: 24px;
+}
+
+.iconosFooter svg:hover{
+    color: #006DFF;
+}
+
 
 @media (max-width: 992px) {
-    .contenedorCards{
+    .contenedorCards {
         flex-wrap: wrap;
     }
-    .card{
+
+    .card {
         flex: none;
         width: 45%;
         flex-direction: column-reverse;
     }
-    .anchoDoble{
+
+    .anchoDoble {
         flex: none;
         width: 93%;
     }
 
-    .contenedorCardVertical{
+    .contenedorCardVertical {
         flex-wrap: wrap;
     }
 
-    .cardVertical{
+    .cardVertical {
         flex: none;
         width: 30%;
     }
 }
+
 @media (max-width: 576px) {
-    .contenedorCards{
+    .contenedorCards {
         flex-direction: column;
     }
 
-    .card, .anchoDoble{
+    .card,
+    .anchoDoble {
         flex: 1;
         width: 100%;
     }
 
-    .card{
+    .card {
         flex-direction: row-reverse;
     }
 
-    .contenedorTexto{
+    .contenedorTexto {
         flex-direction: column;
         align-items: center;
         width: 30%;
     }
 
-    .contenedorCardVertical{
+    .contenedorCardVertical {
         flex-direction: column;
     }
-    .cardVertical{
+
+    .cardVertical {
         width: 100%;
         height: 150px;
     }
 }
-
