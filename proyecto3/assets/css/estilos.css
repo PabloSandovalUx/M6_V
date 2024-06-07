@@ -1,8 +1,16 @@
-body{
+/* body{
     background-color: #1f1f1f;
     color: #e4e4e4;
 }
 
 .bg-principal{
     background-color: #6e2cf4;
+} */
+.fondoMobile{
+    background-color: #dc3545;
+}
+@media (min-width: 768px) {
+    .fondoMobile{
+        background-color: transparent;
+    }
 }
