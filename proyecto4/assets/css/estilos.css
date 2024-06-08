@@ -1,0 +1,50 @@
+:root{
+    --gris: #cecece;
+    --blanco: #ebebeb;
+    --negro: #121212;
+    --principal: #FB7633;
+    --rosa: #ec6990;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--blanco);
+}
+
+.bg-header{
+    background-color: var(--gris);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bg-oscuro{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+a.bg-oscuro{
+    transition: background .4s;
+}
+
+a.bg-oscuro:hover{
+    background-color: var(--rosa);
+}
+
+.textos-hero{
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 30px;
+}
+
+.color-rosa{
+    color: var(--rosa);
+}
+
+.margenSeccionComprar{
+    margin: 0 10%;
+}
+
+.margenSeccionComprar h1{
+    font-weight: 900;
+}
