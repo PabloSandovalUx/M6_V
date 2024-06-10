@@ -1,50 +1,166 @@
-:root{
+:root {
     --gris: #cecece;
     --blanco: #ebebeb;
     --negro: #121212;
+    --colorSombra: rgba(18, 18, 18,.5);
     --principal: #FB7633;
     --rosa: #ec6990;
+    --colorBorde: #f2ebdd;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     background-color: var(--blanco);
 }
 
-.bg-header{
+.bg-header {
     background-color: var(--gris);
     text-align: center;
     padding: 20px 0;
 }
 
-.bg-oscuro{
+.bg-oscuro {
     background-color: var(--negro);
     color: var(--blanco);
 }
 
-a.bg-oscuro{
+a.bg-oscuro {
     transition: background .4s;
 }
 
-a.bg-oscuro:hover{
+a.bg-oscuro:hover {
     background-color: var(--rosa);
 }
 
-.textos-hero{
+.textos-hero {
     font-size: 40px;
     font-weight: 900;
     margin: 0;
     line-height: 30px;
 }
 
-.color-rosa{
+.color-rosa {
     color: var(--rosa);
 }
 
-.margenSeccionComprar{
+.margenSeccionComprar {
     margin: 0 10%;
 }
 
-.margenSeccionComprar h1{
+.titulos {
     font-weight: 900;
 }
+
+.cardNovedades {
+    overflow: hidden;
+}
+
+.cardNovedades img {
+    width: 100%;
+    transition: all .4s;
+}
+
+.cardNovedades:hover img{
+    width: 90%;
+}
+
+.cardNovedades p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.cardClasicos img,
+.novedadesCard img {
+    transition: all .4s;
+}
+
+.cardClasicos:hover img,
+.novedadesCard:hover img {
+    filter: brightness(.8);
+}
+
+.cardClasicos p {
+    margin: 0;
+    bottom: 5%;
+    font-size: 12px;
+    z-index: 2;
+    color: var(--rosa);
+    font-weight: 700;
+}
+
+.bg-blanco{
+    background-color: white;
+}
+
+.seccionComparar article {
+    overflow: hidden;
+}
+
+.seccionComparar img {
+    filter: blur(3px)grayscale(1);
+    transition: all .4s;
+}
+
+.seccionComparar img:hover {
+    filter: blur(0)grayscale(0);
+}
+
+.novedadesTextoTitulo {
+    color: var(--principal);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 8px;
+    transition: margin .4s;
+}
+
+.novedadesTextoNombre {
+    margin: 0;
+    margin-left: 8px;
+}
+
+.novedadesTextoPrecio {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.novedadesCard:hover .novedadesTextoTitulo{
+    margin-top: 5px;
+}
+
+.banner{
+    border: 15px solid var(--colorBorde);
+    box-shadow: 0 5px 10px var(--colorSombra);
+    margin: 0 5%;
+}
+
+.textoBanner{
+    z-index: 2;
+}
+
+.textoBanner h2{
+    font-size: 40px;
+    color: var(--blanco);
+}
+
+.imgBanner{
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgBanner img{
+    filter: grayscale(.6)brightness(.8);
+    width: 100%;
+    transition: width .4s;
+}
+
+.banner:hover img{
+    width: 110%;
+}
+
+
