@@ -1,0 +1,74 @@
+:root{
+    --fondo: #0a0e16;
+    --fondoOscuro: #040406;
+    --fondoClaro: #192132;
+
+    --principal: #8886f8;
+    --principalOscuro: #5c44fa;
+    --principalClaro: #ced1ff;
+
+    --textos: #eeeeee;
+}
+
+body{
+    background-color: var(--fondo);
+    color: var(--textos);
+}
+
+/* CLASES DEL NAVBAR */
+.barraNavegacion{
+    background-color: var(--fondoOscuro);
+}
+
+.nav-link{
+    color: var(--textos);
+}
+
+.nav-link:hover{
+    color: var(--principal);
+}
+
+.nav-link i{
+    font-size: 20px;
+    margin: 0 3px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show{
+    color: var(--principalOscuro);
+}
+
+.nav-item{
+    margin: auto 0;
+}
+
+.dropdown-menu{
+    background-color: var(--fondoClaro);
+}
+.dropdown-item{
+    color: var(--textos);
+}
+
+.dropdown-item:hover{
+    background-color: var(--principal);
+    color: var(--fondo);
+}
+
+.navbar-toggler{
+    color: var(--textos);
+    border-color: var(--principal);
+}
+
+.navbar-toggler:focus{
+    color: var(--principal);
+}
+
+.logo{
+    height: 30px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -50%;
+}
+
+/* FIN CLASES NAVBAR */
