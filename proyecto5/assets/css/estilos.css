@@ -147,3 +147,57 @@ body{
     background-color: var(--principalOscuro);
     color: var(--textos);
 }
+
+/* FOOTER */
+
+footer{
+    background-color: var(--fondoClaro);
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 15px;
+}
+
+footer li{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    transition: all .4s;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--textos);
+}
+
+footer li:hover{
+    border-left: 8px solid var(--principal);
+    padding-left: 12px;
+}
+
+footer i{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+footer i:hover{
+    color: var(--principal);
+}
+
+.footerSub{
+    border-right: 1px solid var(--textos);
+}
+
+.footerSub:hover{
+    text-decoration: underline;
+    border-left: none;
+}
+
+.footerSub:last-child{
+    border-right: none;
+}
+
+.subFooter{
+    margin-bottom: 20px;
+}
