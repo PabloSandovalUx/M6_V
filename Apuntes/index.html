@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MODIFICAR DESDE AQUI -->
+    <title>Glosario</title>
+    <meta name="description" content="Descripción del sitio web">
+    <meta name="keywords" content="Palabras, claves, del, sitio">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
+    <!-- Aca va la tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Aqui agrego el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Mi propio CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <h1 class="text-center py-2">Apuntes Bootstrap</h1>
+
+    <div class="accordion mx-3" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseT" aria-expanded="false" aria-controls="collapseTwo">
+                    TAMAÑOS
+                </button>
+            </h2>
+            <div id="collapseT" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-0</h6>
+                        </div>
+                        <div class="col-8 col-md-4  mb-4">
+                            <h5>none</h5>
+                            <p>Tamaño 0px</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-1</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Tamaño 1</h5>
+                            <p>Tamaño de 4px</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-2</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Tamaño 2</h5>
+                            <p>Tamaño de 8px</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-3</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Tamaño 3</h5>
+                            <p>Tamaño de 16px</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-4</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Tamaño 4</h5>
+                            <p>Tamaño de 24px</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-5</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Tamaño 5</h5>
+                            <p>Tamaño de 48px</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6>-auto</h6>
+                        </div>
+                        <div class="col-8 col-md-4  mb-4">
+                            <h5>auto</h5>
+                            <p>divide el espacio en partes iguales</p>
+                            <p><i>* Solo para margen</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseP" aria-expanded="false" aria-controls="collapseTwo">
+                    PADDING
+                </button>
+            </h2>
+            <div id="collapseP" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"p-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <h5>padding</h5>
+                            <p>padding en todas direcciones de tamaño 5</p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"py-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <h5>padding-top y padding-bottom</h5>
+                            <p>padding hacia arriba y abajo de tamaño 5</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"pt-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>padding-top</h5>
+                            <p>padding hacia arriba de tamaño 5</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"pb-4"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>padding-bottom</h5>
+                            <p>padding hacia abajo de tamaño 5</p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"px-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <h5>padding-left y padding-right </h5>
+                            <p>padding a la izquierda y a la derecha de tamaño 5</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"ps-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>padding-left</h5>
+                            <p>padding a la izquierda de tamaño 5</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"pe-4"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>padding-right</h5>
+                            <p>padding a la derecha de tamaño 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseM" aria-expanded="false" aria-controls="collapseTwo">
+                    MARGEN
+                </button>
+            </h2>
+            <div id="collapseM" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"m-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <h5>margin</h5>
+                            <p>Margen en todas direcciones de tamaño 5</p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"my-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <h5>margin-top y margin-bottom</h5>
+                            <p>Margen hacia arriba y abajo de igual tamaño</p>
+                            <p><s>"my-auto"</s> para centrar verticalmente</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"mt-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>margin-top</h5>
+                            <p>Margen hacia arriba de tamaño 5</p>
+                            <p><s>"mt-auto"</s> para alinear abajo</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"mb-4"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>margin-bottom</h5>
+                            <p>Margen hacia abajo de tamaño 5</p>
+                            <p><s>"mb-auto"</s> para alinear arriba</p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"mx-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <h5>margin-left y margin-right </h5>
+                            <p>Margen a la izquierda y a la derecha de tamaño 5</p>
+                            <p><s>"mx-auto"</s> para centrar horizontalmente</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"ms-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>margin-left</h5>
+                            <p>Margen a la izquierda de tamaño 5</p>
+                            <p><s>"ms-auto"</s> para justificar al final</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"me-4"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>margin-right</h5>
+                            <p>Margen a la derecha de tamaño 5</p>
+                            <p><s>"me-auto"</s> para justificar al inicio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCo" aria-expanded="false" aria-controls="collapseTwo">
+                    CONTENEDOR
+                </button>
+            </h2>
+            <div id="collapseCo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"container"</h6>
+                        </div>
+                        <div class="col-8 col-md-4  mb-4">
+                            <h5>Contenedor con margen</h5>
+                            <p>Agrega un margen a la izquierda y derecha</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"container-fluid"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Contenedor sin margen</h5>
+                            <p>Utiliza todo el ancho de la pantalla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseC" aria-expanded="false" aria-controls="collapseTwo">
+                    COLUMNAS
+                </button>
+            </h2>
+            <div id="collapseC" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"row"</h6>
+                        </div>
+                        <div class="col-8 col-md-10 mb-4">
+                            <p>Activa el uso de 12 columnas</p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"col"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Ancho automático</h5>
+                            <p>Ancho de columnas automático dependiendo de la cantidad de elementos</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"col-6"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Ancho fijo</h5>
+                            <p>Ancho de columnas definido</p>
+                            <p><s>"col-1"</s> al <s>"col-12</s> ancho de 1 a 12 columnas</p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"col-12"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Vista mobile</h5>
+                            <p>Define el ancho de las columnas para la vista mobile</p>
+                            <p><s>"col-1"</s> al <s>"col-12</s> ancho de 1 a 12 columnas</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"col-md-12"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Vista tablet</h5>
+                            <p>Define el ancho de las columnas para la vista tablet</p>
+                            <p><s>"col-1"</s> al <s>"col-12</s> ancho de 1 a 12 columnas</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"col-lg-12"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>Vista escritorio</h5>
+                            <p>Define el ancho de las columnas para la vista escritorio</p>
+                            <p><s>"col-1"</s> al <s>"col-12</s> ancho de 1 a 12 columnas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseB" aria-expanded="false" aria-controls="collapseTwo">
+                    BORDES
+                </button>
+            </h2>
+            <div id="collapseB" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"border"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>border</h5>
+                            <p>Borde completo de 1px solido color blanco</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"border border-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>border tamaño 5</h5>
+                            <p>Borde completo de 5px solido color blanco</p>
+                            <p>Acepta tamaño del <s>"-1"</s> al <s>"-5"</s></p>
+                        </div>
+                        <div class="w-100 my-3"></div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"rounded-5"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>border-radius</h5>
+                            <p>Bordes redondeados</p>
+                            <p>Acepta tamaño del <s>"-1"</s> al <s>"-5"</s></p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"rounded-circle"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>border-radius 50%</h5>
+                            <p>Bordes redondeados al 50%</p>
+                        </div>
+                        <div class="col-4 col-md-2 fondoCodigo d-flex align-items-center justify-content-center mb-4">
+                            <h6><b>class</b><s>=</s>"rounded-pill"</h6>
+                        </div>
+                        <div class="col-8 col-md-4 mb-4">
+                            <h5>border-radius a los costados</h5>
+                            <p>Bordes redondeados al 50% a la izquierda y derecha</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Javascript para el funcionamiento de algunas cosas de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

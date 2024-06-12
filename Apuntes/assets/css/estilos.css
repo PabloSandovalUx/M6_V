@@ -1,0 +1,107 @@
+:root{
+    --base: #232429;
+    --baseOscuro: #15161d;
+    --baseClaro: #2b2b36;
+
+    --principal: #fc9900;
+    --principalClaro: #fbbd5d;
+
+    --textos: #ececec;
+}
+
+body{
+    background-color: var(--base);
+    color: var(--textos);
+}
+
+.accordion{
+    --bs-accordion-border-width: 0;
+}
+
+.accordion-item{
+    background-color: transparent;
+    color: var(--textos);
+    margin-bottom: 20px;
+}
+
+.accordion-collapse{
+    background-color: var(--base);
+}
+
+.accordion-button{
+    background-color: transparent;
+    border-bottom: 1px solid var(--principal);
+    color: var(--textos);
+}
+
+.accordion-button::after{
+    background-image: url("../img/chevron-up.svg");
+    transform: rotate(180deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../img/chevron-up.svg");
+    transform: rotate(0);
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: var(--textos);
+}
+
+.accordion-body h6{
+    display: inline-block;
+    color: #ce9178;
+    border-radius: 5px;
+    background-color: var(--baseOscuro);
+    margin: 0;
+}
+
+.accordion-body h6 b{
+    color: #9cdcfe;
+    font-weight: 400;
+}
+.accordion-body h6 s{
+    color: var(--textos);
+    text-decoration: none;
+}
+
+.fondoCodigo{
+    background-color: var(--baseOscuro);
+    color: #ce9178;
+    border-radius: 5px;
+}
+
+.accordion-body h5{
+    color: #ce9178;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.accordion-body p{
+    margin: 0;
+}
+
+.accordion-body p s{
+    color: #ce9178;
+    text-decoration: none;
+}
+
+p i{
+    font-size: 12px;
+}
+
+.w-100{
+    border-bottom: 2px solid var(--baseClaro);
+}
+
+button{
+    font-weight: 700;
+}
+
+h1{
+    color: var(--base);
+    background-color: var(--principal);
+}
