@@ -8,11 +8,13 @@
     --principalClaro: #ced1ff;
 
     --textos: #eeeeee;
+    --textosSecundario: #9c9c9c;
 }
 
 body{
     background-color: var(--fondo);
     color: var(--textos);
+    font-family: "Poppins", sans-serif;
 }
 
 /* CLASES DEL NAVBAR */
@@ -72,3 +74,76 @@ body{
 }
 
 /* FIN CLASES NAVBAR */
+
+/* ESTILOS CARD */
+
+.seccionPeliculas .card{
+    border: none;
+    background-color: transparent;
+    color: var(--textos);
+    transition: background .4s;
+}
+
+.btnPrincipal{
+    background-color: var(--principal);
+    color: var(--textos);
+}
+
+.btnPrincipal:hover{
+    background-color: var(--principalOscuro);
+}
+
+.seccionPeliculas h5{
+    margin-bottom: 0;
+    margin-top: 3px;
+    transition: margin .4s;
+}
+
+.seccionPeliculas p{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--textosSecundario);
+}
+
+.card img{
+    transition: all .4s;
+}
+
+.card:hover h5{
+    margin-top: -5px;
+}
+
+.card:hover{
+    background-color: var(--fondoClaro);
+}
+
+/* CLASES ACORDEON */
+
+.accordion{
+    --bs-accordion-border-width: 0;
+}
+
+.accordion-item{
+    background-color: var(--fondoOscuro);
+    color: var(--textos);
+    margin-bottom: 20px;
+}
+
+.accordion-button{
+    background-color: var(--fondoClaro);
+    color: var(--textos);
+}
+
+.accordion-button::after{
+    background-image: url("../img/chevron-up.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../img/chevron-up.svg");
+    transform: rotate(180deg);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--principalOscuro);
+    color: var(--textos);
+}
