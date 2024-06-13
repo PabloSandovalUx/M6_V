@@ -1,0 +1,80 @@
+:root{
+    --colorPrincipal: #f43950;
+    --colorPrincipalClaro: #F87B8A;
+    --colorPrincipalOscuro: #A32635;
+
+    --textos: #fefefe;
+    --textosSecundarios: #A9A9A9;
+
+    --fondo: #3a3e63;
+    --fondoClaro: #7C7E97;
+    --fondoOscuro: #272942;
+}
+
+body{
+    background-color: var(--fondo);
+    color: var(--textos);
+}
+
+.bgHeader{
+    background-color: var(--fondoOscuro);
+}
+
+.seccionLateral{
+    border-bottom: 1px solid var(--fondoClaro);
+    padding: 20px 0;
+}
+
+.seccionLateral h5{
+    font-size: 16px;
+}
+
+.form-check-input{
+    background-color: var(--fondo);
+    border-color: var(--fondoClaro);
+}
+
+.form-check-label{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.form-check-label span{
+    color: var(--colorPrincipalClaro);
+    margin-left: 5px;
+}
+
+.form-check-input:checked {
+    background-color: var(--colorPrincipalClaro);
+    border-color: var(--colorPrincipalOscuro);
+}
+
+.flexLateral{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: start;
+}
+
+.btnBorde{
+    border: 2px solid var(--fondoClaro);
+    color: var(--textos);
+    padding: 5px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.btnBorde:hover{
+    border-color: var(--colorPrincipalOscuro);
+}
+
+.btnBordeSelec{
+    background-color: var(--colorPrincipalClaro);
+    border-color: var(--colorPrincipalClaro);
+}
+
+.btnBordeSelec:hover{
+    background-color: var(--colorPrincipalOscuro);
+    border-color: var(--colorPrincipalOscuro);
+}

@@ -1,4 +1,4 @@
-:root{
+:root {
     --fondo: #0a0e16;
     --fondoOscuro: #040406;
     --fondoClaro: #192132;
@@ -11,61 +11,62 @@
     --textosSecundario: #9c9c9c;
 }
 
-body{
+body {
     background-color: var(--fondo);
     color: var(--textos);
     font-family: "Poppins", sans-serif;
 }
 
 /* CLASES DEL NAVBAR */
-.barraNavegacion{
+.barraNavegacion {
     background-color: var(--fondoOscuro);
 }
 
-.nav-link{
+.nav-link {
     color: var(--textos);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--principal);
 }
 
-.nav-link i{
+.nav-link i {
     font-size: 20px;
     margin: 0 3px;
 }
 
 .navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show{
+.navbar-nav .nav-link.show {
     color: var(--principalOscuro);
 }
 
-.nav-item{
+.nav-item {
     margin: auto 0;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: var(--fondoClaro);
 }
-.dropdown-item{
+
+.dropdown-item {
     color: var(--textos);
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: var(--principal);
     color: var(--fondo);
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: var(--textos);
     border-color: var(--principal);
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     color: var(--principal);
 }
 
-.logo{
+.logo {
     height: 30px;
 }
 
@@ -77,64 +78,64 @@ body{
 
 /* ESTILOS CARD */
 
-.seccionPeliculas .card{
+.seccionPeliculas .card {
     border: none;
     background-color: transparent;
     color: var(--textos);
     transition: background .4s;
 }
 
-.btnPrincipal{
+.btnPrincipal {
     background-color: var(--principal);
     color: var(--textos);
 }
 
-.btnPrincipal:hover{
+.btnPrincipal:hover {
     background-color: var(--principalOscuro);
 }
 
-.seccionPeliculas h5{
+.seccionPeliculas h5 {
     margin-bottom: 0;
     margin-top: 3px;
     transition: margin .4s;
 }
 
-.seccionPeliculas p{
+.seccionPeliculas p {
     font-size: 12px;
     font-weight: 300;
     color: var(--textosSecundario);
 }
 
-.card img{
+.card img {
     transition: all .4s;
 }
 
-.card:hover h5{
+.card:hover h5 {
     margin-top: -5px;
 }
 
-.card:hover{
+.card:hover {
     background-color: var(--fondoClaro);
 }
 
 /* CLASES ACORDEON */
 
-.accordion{
+.accordion {
     --bs-accordion-border-width: 0;
 }
 
-.accordion-item{
+.accordion-item {
     background-color: var(--fondoOscuro);
     color: var(--textos);
     margin-bottom: 20px;
 }
 
-.accordion-button{
+.accordion-button {
     background-color: var(--fondoClaro);
     color: var(--textos);
 }
 
-.accordion-button::after{
+.accordion-button::after {
     background-image: url("../img/chevron-up.svg");
 }
 
@@ -150,54 +151,79 @@ body{
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: var(--fondoClaro);
 }
 
-footer ul{
+footer ul {
     list-style: none;
     padding-left: 15px;
 }
 
-footer li{
+footer li {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 5px;
     transition: all .4s;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: var(--textos);
 }
 
-footer li:hover{
+footer li:hover {
     border-left: 8px solid var(--principal);
     padding-left: 12px;
 }
 
-footer i{
+footer i {
     margin-left: 15px;
     font-size: 25px;
 }
 
-footer i:hover{
+footer i:hover {
     color: var(--principal);
 }
 
-.footerSub{
+.footerSub {
     border-right: 1px solid var(--textos);
 }
 
-.footerSub:hover{
+.footerSub:hover {
     text-decoration: underline;
     border-left: none;
 }
 
-.footerSub:last-child{
+.footerSub:last-child {
     border-right: none;
 }
 
-.subFooter{
+.subFooter {
     margin-bottom: 20px;
+}
+
+/* CARD LINEAL */
+.contenedorCardLineal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.cardLineal {
+    min-width: 40%;
+}
+
+@media (min-width: 768px) {
+    .cardLineal {
+        min-width: 28%;
+    }
+}
+
+@media (min-width: 992px) {
+    .cardLineal {
+        min-width: 20%;
+    }
 }
