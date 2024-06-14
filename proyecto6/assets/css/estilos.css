@@ -3,12 +3,14 @@
     --colorPrincipalClaro: #F87B8A;
     --colorPrincipalOscuro: #A32635;
 
+    --colorSecundario: #38F561;
+
     --textos: #fefefe;
     --textosSecundarios: #A9A9A9;
 
-    --fondo: #3a3e63;
-    --fondoClaro: #7C7E97;
-    --fondoOscuro: #272942;
+    --fondo: #222526;
+    --fondoClaro: #424446;
+    --fondoOscuro: #1c1c1c;
 }
 
 body{
@@ -119,8 +121,9 @@ body{
 .contenidoCarrusel{
     left: 0;
     color: var(--textos);
-    background: linear-gradient(to right, rgba(0,0,0,.7) 75%,transparent);
+    /* background: linear-gradient(to right, rgba(0,0,0,.75) 75%,transparent); */
 
+    backdrop-filter: blur(5px);
     height: 100%;
     padding: 10% 10%;
 }
@@ -148,4 +151,89 @@ body{
 
 .contenidoCarrusel a:hover{
     background-color: var(--colorPrincipal);
+}
+
+/* CARD */
+.seccionNuevos .card,
+.seccionEstrellas .card {
+    border: none;
+    background-color: var(--fondoClaro);
+    color: var(--textos);
+    transition: background .4s;
+    margin-bottom: 20px;
+}
+
+.btnPrincipal {
+    background-color: var(--colorPrincipal);
+    color: var(--textos);
+}
+
+.btnPrincipal:hover {
+    background-color: var(--colorPrincipalOscuro);
+}
+
+.btnVer{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.seccionNuevos h5,
+.seccionEstrellas h5 {
+    margin-bottom: 0;
+    margin-top: 3px;
+    transition: margin .4s;
+}
+
+.seccionNuevos h5 span,
+.seccionEstrellas h5 span {
+    color: var(--colorPrincipalClaro);
+}
+
+.seccionNuevos p,
+.seccionEstrellas p {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--textosSecundarios);
+}
+
+.contenedorEtiquetas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.contenedorEtiquetas .etiquetas{
+    background-color: var(--colorSecundario);
+    color: var(--fondoOscuro);
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.tituloCardNuevos{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 5px 15px;
+    /* background-color: rgba(244, 57, 80,.8); */
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 5px var(--fondoOscuro);
+    font-size: 20px;
+}
+
+.contenedorRanking{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.estrellaNo{
+    color: var(--fondo);
+}
+
+.estrellaSi{
+    color: var(--colorPrincipal);
 }
