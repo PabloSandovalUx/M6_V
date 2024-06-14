@@ -25,9 +25,13 @@
 
 <body class="container-fluid">
     <div class="row">
-        <header class="col-3 bgHeader d-flex flex-column ">
+        <header class="col-3 bgHeader d-flex flex-column">
             <section class="seccionLateral">
-                <h5 class="mb-3">Sección 1</h5>
+                <img src="assets/img/avatar.avif" class="imgAvatar" alt="">
+                <div class="contenedorAvatar">
+                    <a href="#" class="btn btnAvatar">btn 1</a>
+                    <a href="#" class="btn btnAvatar">btn 2</a>
+                </div>
             </section>
             <section class="seccionLateral">
                 <h5 class="mb-3">Sección 2</h5>
@@ -104,8 +108,47 @@
 
             </section>
         </header>
-        <main class="col">
-            MAIN
+        <main class="col-9 ms-auto p-0">
+            <section>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item position-relative active">
+                            <div class="position-absolute contenidoCarrusel">
+                                <h1>Hola</h1>
+                                <h4>Como estas?</h4>
+                                <a href="#" class="btn">COMPRAR</a>
+                            </div>
+                            <img src="assets/img/carrusel_1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="position-absolute contenidoCarrusel">
+                                <h2>Hola</h2>
+                                <h4>Como estas?</h4>
+                                <a href="#" class="btn">COMPRAR</a>
+                            </div>
+                            <img src="assets/img/carrusel_2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="position-absolute contenidoCarrusel">
+                                <h2>Hola</h2>
+                                <h4>Como estas?</h4>
+                                <a href="#" class="btn">COMPRAR</a>
+                            </div>
+                            <img src="assets/img/carrusel_3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
         </main>
     </div>
 

@@ -18,6 +18,13 @@ body{
 
 .bgHeader{
     background-color: var(--fondoOscuro);
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.bgHeader::-webkit-scrollbar {
+    display: none;
 }
 
 .seccionLateral{
@@ -77,4 +84,68 @@ body{
 .btnBordeSelec:hover{
     background-color: var(--colorPrincipalOscuro);
     border-color: var(--colorPrincipalOscuro);
+}
+
+.imgAvatar{
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--colorPrincipalClaro);
+}
+
+.imgAvatar:hover{
+    border-color: var(--colorPrincipal);
+}
+
+.contenedorAvatar{
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btnAvatar{
+    width: 100%;
+    background-color: var(--fondoClaro);
+    color: var(--textos);
+    border-radius: 0;
+}
+
+.btnAvatar:hover{
+    background-color: var(--colorPrincipalClaro);
+}
+
+/* CONTENIDO CARRUSEL IZQUIERDA */
+.contenidoCarrusel{
+    left: 0;
+    color: var(--textos);
+    background: linear-gradient(to right, rgba(0,0,0,.7) 75%,transparent);
+
+    height: 100%;
+    padding: 10% 10%;
+}
+
+/* CONTENIDO CARRUSEL ABAJO */
+/* .contenidoCarrusel{
+    bottom: 0;
+    color: var(--textos);
+    background-color: rgba(39, 41, 66,.7);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+} */
+
+.contenidoCarrusel h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+.contenidoCarrusel a{
+    background-color: var(--colorPrincipalClaro);
+    color: var(--textos);
+    padding: 5px 20px;
+}
+
+.contenidoCarrusel a:hover{
+    background-color: var(--colorPrincipal);
 }
