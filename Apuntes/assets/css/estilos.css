@@ -105,3 +105,14 @@ h1{
     color: var(--base);
     background-color: var(--principal);
 }
+
+.css i{
+    font-style: normal;
+    color: #dcdcaa;
+}
+
+.css u{
+    text-decoration: none;
+    color: #da70d6;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}

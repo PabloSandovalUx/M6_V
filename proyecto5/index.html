@@ -24,6 +24,31 @@
 </head>
 
 <body>
+    <section class="formularioCompra row  my-5">
+        <article class="col-12">
+            <h3>Compra pasajes</h3>
+            <form>
+                <div class="formularioFlex">
+                    <div >
+                        <label for="compraPasInicio" class="form-label">Fecha Ida</label>
+                        <input type="date" class="form-control" id="compraPasInicio"
+                            aria-describedby="emailHelp" value="2024-06-15">
+                    </div>
+                    <div >
+                        <label for="compraPasFin" class="form-label">Fecha Vuelta</label>
+                        <input type="date" class="form-control" id="compraPasFin" aria-describedby="vuelta">
+                    </div>
+                    <div >
+                        <label for="compraPasCantidad" class="form-label">Cantidad Pasajes</label>
+                        <input type="number" class="form-control" id="compraPasCantidad" value="1" min="1"
+                            max="30">
+                    </div>
+                    <button type="submit" class="btn btnPrincipal d-block w-50 mx-auto">Ingresar</button>
+                </div>
+                
+            </form>
+        </article>
+    </section>
     <header>
         <nav class="navbar navbar-expand-md barraNavegacion">
             <div class="container-fluid mx-3">
